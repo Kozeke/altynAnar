@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+Route::get('get/foods', 'FoodController@getFoods');
+Route::get('make/order', 'FoodController@getFoods');
+Route::post('place/order', 'OrderController@placeOrder');
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
