@@ -7,7 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 class Food extends Model
 {
     protected $fillable = [
-        'name','photo_url','price','category_id'
+        'name',
+        'photo_url',
+        'price',
+        'category_id'
     ];
 
     /**
@@ -16,7 +19,8 @@ class Food extends Model
      * @var array
      */
     protected $hidden = [
-        'created_at', 'updated_at',
+        'created_at',
+        'updated_at',
     ];
 
 }

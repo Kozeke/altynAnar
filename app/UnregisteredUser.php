@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class UnregisteredUser extends Model
 {
     protected $fillable = [
-        'customer_name','phone','address','ip'
+        'customer_name',
+        'phone',
+        'address',
+        'ip'
     ];
 }

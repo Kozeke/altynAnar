@@ -7,7 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Category extends Model
 {
     protected $fillable = [
-        'name','photo_url'
+        'name',
+        'photo_url'
     ];
 
     /**
@@ -16,8 +17,10 @@ class Category extends Model
      * @var array
      */
     protected $hidden = [
-        'created_at', 'updated_at',
+        'created_at',
+        'updated_at',
     ];
+
     public function foods()
     {
         return $this->hasMany('App\Food');
